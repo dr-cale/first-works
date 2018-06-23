@@ -1,3 +1,131 @@
 body {
   box-sizing: border-box;
+  margin: 20px;
+  background: #33310f;
+  background: linear-gradient(to top right, Black 20%, #33310f 60%, #6d6928 100%);
+  background: -webkit-linear-gradient(to top right, Black 20%, #33310f 60%, #6d6928 100%);
+  background: -moz-linear-gradient(to top right, Black 20%, #33310f 60%, #6d6928 100%);
+  background-repeat: no-repeat;
+}
+
+body * {
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  background-color: #ead300;
+  border: 2px solid transparent;
+  background-clip: padding-box; /* with Transparent set, just made the border invisible */
+}
+
+header .container:first-child {
+  border-radius: 10px 10px 0 0;
+}
+
+a:visited, a:link {
+  color: inherit;
+}
+
+/* Header */
+header {
+  height: 100px;
+  overflow: hidden;
+}
+header h1 {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  margin-left: 15px;
+  font-size: 50px;
+  color: #33310f;
+  font-family: Nobile;
+  position: relative;
+  bottom: 25px;
+}
+header h1:hover, header h1:active {
+  text-shadow: 2px 2px 4px Black;
+}
+header img {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 0;
+}
+
+header img:hover {
+  opacity: 0.8;
+}
+
+header a {
+  height: inherit;
+  margin: 0;
+}
+
+header .container div {
+  float: left;
+  line-height: 80%;
+}
+
+header nav {
+  position: relative;
+  top: 30px;
+  float: right;
+  width: 50%;
+  margin-right: 20px;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+}
+header nav ul li {
+  display: inline-block;
+  width: calc((100% - 60px) / 4);
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #ead300;
+  border-radius: 10px;
+  background-color: #33310f;
+  color: #ead300;
+  font-size: 15px;
+  font-family: Nobile;
+  float: left;
+  text-align: center;
+  margin-right: 20px;
+  cursor: default;
+}
+
+header nav ul li:last-child {
+  margin: 0;
+}
+
+header nav ul li:hover {
+  font-weight: 700;
+}
+
+header nav ul li a:active {
+  text-shadow: 1px 1px 2px Gold;
+}
+
+/* Main */
+main {
+  height: 600px;
+}
+
+/* Footer */
+footer {
+  height: 300px;
+}
+
+footer .container:first-child {
+  border-radius: 0 0 10px 10px;
 }
